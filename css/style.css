@@ -1,6 +1,93 @@
+:root {
+    --maroon: #8b1e2d;
+    --gold: #e0b000;
+}
+
+body {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+}
+
+.text-block {
+    max-width: 75ch;
+}
+
+code {
+    color: var(--maroon);
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: var(--maroon);
+    border-color: var(--maroon);
+}
+
+.btn-theme:hover,
+.btn-theme:focus-visible {
+    color: #000;
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
+
 .profile-img {
     width: 100%;
-    max-width: 200px;
+    max-width: 240px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+}
+
+.section-heading {
+    color: #fff;
+    background-color: var(--maroon);
+    border: 0;
+    border-bottom: 4px solid var(--gold);
+}
+
+.portfolio-item {
+    border: 1px solid #dee2e6;
+}
+
+.portfolio-title {
+    color: var(--maroon);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--gold);
+}
+
+.portfolio-item a {
+    color: var(--maroon);
+}
+
+.meta dt {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #495057;
+}
+
+.meta dd {
+    margin-bottom: 0.5rem;
+}
+
+.evidence {
+    background-color: #fff;
+    border: 1px solid var(--maroon);
+}
+
+.reflection-card {
+    height: 100%;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--gold);
+    border-radius: 0.25rem;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #dee2e6;
+}
+
+.reflection-card .label {
+    display: block;
+    font-weight: 700;
+    color: var(--maroon);
 }

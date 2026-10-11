@@ -13,11 +13,11 @@
         <header class="card m-3">
             <div class="card-body text-center p-4 p-md-5">
                 <h1 class="fw-bold">Learning Portfolio</h1>
-                <nav class="d-flex flex-wrap justify-content-center gap-2 mt-3" aria-label="เมนูหลัก">
-                    <a href="#about_me" class="btn btn-primary">About Me</a>
-                    <a href="#portfolio" class="btn btn-primary">Portfolio</a>
-                    <a href="#cs100" class="btn btn-primary">CS100 Assignment</a>
-                    <a href="#competition" class="btn btn-primary">Competition</a>
+                <nav class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                    <a href="#about_me" class="btn btn-theme">About Me</a>
+                    <a href="#portfolio" class="btn btn-theme">Portfolio</a>
+                    <a href="#cs100" class="btn btn-theme">CS100 Assignment</a>
+                    <a href="#competition" class="btn btn-theme">Competition</a>
                 </nav>
             </div>
         </header>
@@ -26,12 +26,14 @@
             <div class="card m-3">
                 <div class="card-body">
                     <section id="about_me">
-                        <h2 class="alert alert-warning border-2 rounded-3">About Me</h2>
+                        <h2 class="alert section-heading rounded-3">About Me</h2>
 
-                        <p>ชื่อ: <b>ศรัณย์ รั่งสันเทียะ</b> รหัสนักศึกษา: <b>6709616210</b> หลักสูตร: <b>สถิติศาสตร์</b></p>
-                        <p>สวัสดีครับ ผมชื่อต้าร์ นักศึกษาชั้นปีที่ 3 สาขาสถิติ มหาวิทยาลัยธรรมศาสตร์ สนใจการวิเคราะห์ข้อมูลและ Machine Learning เว็บไซต์นี้คือพอร์ตโฟลิโอชิ้นแรกที่รวบรวมสิ่งที่ผมได้เรียนรู้และสร้างขึ้น</p>
-                        <p>มีความสนใจในด้าน <code>Quantitative Finance, Data Science, and Machine Learning</code></p>
-                        <p>ไอดอลของผมคือ: </p>
+                        <div class="text-block">
+                            <p>ชื่อ: <b>ศรัณย์ รั่งสันเทียะ</b> รหัสนักศึกษา: <b>6709616210</b> หลักสูตร: <b>สถิติศาสตร์</b></p>
+                            <p>สวัสดีครับ ผมชื่อต้าร์ นักศึกษาชั้นปีที่ 3 สาขาสถิติ มหาวิทยาลัยธรรมศาสตร์ สนใจการวิเคราะห์ข้อมูลและ Machine Learning เว็บไซต์นี้คือพอร์ตโฟลิโอชิ้นแรกที่รวบรวมสิ่งที่ผมได้เรียนรู้และสร้างขึ้น</p>
+                            <p>มีความสนใจในด้าน <code>Quantitative Finance, Data Science, and Machine Learning</code></p>
+                            <p>ไอดอลของผมคือ: </p>
+                        </div>
                         <div class="row g-4">
                             <figure class="col-12 col-md-6 text-center text-md-start">
                                 <img class="profile-img rounded shadow" alt="Ronald Aylmer Fisher" src="./media/untitled_design_2_0.png.webp">
@@ -49,51 +51,67 @@
             <div class="card m-3">
                 <div class="card-body">
                     <section id="portfolio">
-                        <h2 class="alert alert-warning border-2 rounded-3">Portfolio</h2>
+                        <h2 class="alert section-heading rounded-3">Portfolio</h2>
 
-                        <article id="cs100" class="row g-3 mb-4">
-                            <div class="col-12 col-lg-8">
-                                <h3 class="h4">CS100 Assignment 1:</h3>
-                                <p><b>Title: </b>CS100 A1:My First Learning Portfolio</p>
-                                <p><b>Type: </b>Course Assignment </p>
-                                <p><b>Date: </b>30 Aug 2026</p>
-                                <p><b>Role: </b>Individual Developer </p>
-                                <p><b>Description: </b>พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS โดยมีส่วนแนะนำตัว ไอดอล และรายการผลงาน</p>
-                                <p><b>Skills: </b>HTML, CSS, Semantic HTML </p>
-                                <p><b>Reflection: </b></p>
-                                <ul>
-                                    <li><b>What I did: </b>เขียนโครงหน้าเว็บด้วย HTML แล้วจัดรูปแบบด้วย CSS ทำเป็นเว็บไซต์หน้าเดียวที่แนะนำตัวและรวบรวมผลงาน</li>
-                                    <li><b>What I learned: </b>เข้าใจว่า HTML กำหนดโครงสร้างและ CSS กำหนดหน้าตา ได้ฝึก tacit knowledge ในการทำ static website</li>
-                                    <li><b>Challenge: </b>เขียน HTML ได้ แต่ไม่รู้ว่าจะทำ CSS อย่างไร จึงศึกษาเพิ่มจากช่อง YouTube Bro Code และใช้ LLM Copilot ช่วยเรื่อง syntax แล้วลองแก้ทีละจุด</li>
-                                    <li><b>Next step: </b>อยากให้หน้าเว็บใช้งานบนมือถือได้ดีขึ้นด้วย Bootstrap และ responsive design ซึ่งเป็นสิ่งที่ทำต่อในงาน A2 นี้</li>
-                                </ul>
+                        <article id="cs100" class="portfolio-item rounded-3 p-3 p-md-4 mb-4">
+                            <h3 class="portfolio-title">CS100 Assignment 1</h3>
+                            <div class="row g-4">
+                                <div class="col-12 col-lg-8">
+                                    <dl class="meta row g-2 mb-0">
+                                        <div class="col-12"><dt>Title:</dt><dd>CS100 A1:My First Learning Portfolio</dd></div>
+                                        <div class="col-12 col-sm-4"><dt>Type:</dt><dd>Course Assignment</dd></div>
+                                        <div class="col-12 col-sm-4"><dt>Date:</dt><dd>30 Aug 2026</dd></div>
+                                        <div class="col-12 col-sm-4"><dt>Role:</dt><dd>Individual Developer</dd></div>
+                                        <div class="col-12"><dt>Description:</dt><dd>พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS โดยมีส่วนแนะนำตัว ไอดอล และรายการผลงาน</dd></div>
+                                        <div class="col-12"><dt>Skills:</dt><dd>HTML, CSS, Semantic HTML</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="evidence rounded-3 p-3">
+                                        <h4 class="h6 mb-2">Evidence</h4>
+                                        <p class="mb-1">GitHub Repository</p>
+                                        <a href="https://github.com/srsrsrs123/myfirstcs100repo">https://github.com/srsrsrs123/myfirstcs100repo</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <p><b>Evidence: </b></p>
-                                <p>GitHub Repository <a href="https://github.com/srsrsrs123/myfirstcs100repo">https://github.com/srsrsrs123/myfirstcs100repo</a></p>
+                            <h4 class="h5 mt-4">Reflection</h4>
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                                <div class="col"><div class="reflection-card"><span class="label">What I did</span>เขียนโครงหน้าเว็บด้วย HTML แล้วจัดรูปแบบด้วย CSS ทำเป็นเว็บไซต์หน้าเดียวที่แนะนำตัวและรวบรวมผลงาน</div></div>
+                                <div class="col"><div class="reflection-card"><span class="label">What I learned</span>เข้าใจว่า HTML กำหนดโครงสร้างและ CSS กำหนดหน้าตา ได้ฝึก tacit knowledge ในการทำ static website</div></div>
+                                <div class="col"><div class="reflection-card"><span class="label">Challenge</span>เขียน HTML ได้ แต่ไม่รู้ว่าจะทำ CSS อย่างไร จึงศึกษาเพิ่มจากช่อง YouTube Bro Code และใช้ LLM Copilot ช่วยเรื่อง syntax แล้วลองแก้ทีละจุด</div></div>
+                                <div class="col"><div class="reflection-card"><span class="label">Next step</span>อยากให้หน้าเว็บใช้งานบนมือถือได้ดีขึ้นด้วย Bootstrap และ responsive design ซึ่งเป็นสิ่งที่ทำต่อในงาน A2 นี้</div></div>
                             </div>
                         </article>
 
-                        <article id="competition" class="row g-3">
-                            <div class="col-12 col-lg-8">
-                                <h3 class="h4">WorldQuant Challenge:</h3>
-                                <p><b>Title: </b>WorldQuant Challenge</p>
-                                <p><b>Type: </b>Competition </p>
-                                <p><b>Date: </b>Nov 2025</p>
-                                <p><b>Role: </b>Competitor </p>
-                                <p><b>Description: </b>เข้าร่วมการแข่งขัน WorldQuant Challenge เพื่อสร้างและทดสอบกลยุทธ์การลงทุนเชิงปริมาณด้วย Python จากข้อมูลตลาดการเงิน</p>
-                                <p><b>Skills: </b>Quantitative Finance, Python Programming </p>
-                                <p><b>Reflection: </b></p>
-                                <ul>
-                                    <li><b>What I did: </b>เข้าร่วมการแข่งขัน WorldQuant Challenge สร้างกลยุทธ์ด้วย Python และใช้ backtesting ตรวจผลจากข้อมูลในอดีต</li>
-                                    <li><b>What I learned: </b>ได้เรียนรู้ว่าต้องตั้งสมมติฐานก่อนแล้วจึงทดสอบ ไม่ใช่ปรับพารามิเตอร์จนผลดูสวย และการยอมรับผลที่ไม่เป็นไปตามที่คาดเป็นส่วนหนึ่งของงาน</li>
-                                    <li><b>Challenge: </b>ก่อนแข่ง ผมคิดว่า quant คือการหาสูตรที่ให้ผลตอบแทนดีที่สุด แต่ปัญหาจริงคือแยกไม่ได้ว่าสัญญาณเป็นของจริงหรือบังเอิญจากข้อมูลในอดีต จึงกลับไปอ่านเรื่อง overfitting, time series และการทดสอบนอกช่วงข้อมูลที่ใช้สร้างโมเดล</li>
-                                    <li><b>Next step: </b>อยากฝึกการแบ่งข้อมูลทดสอบให้เป็นระบบมากขึ้น และเรียนรู้การวัดความเสี่ยงของกลยุทธ์เพิ่มเติม</li>
-                                </ul>
+                        <article id="competition" class="portfolio-item rounded-3 p-3 p-md-4">
+                            <h3 class="portfolio-title">WorldQuant Challenge</h3>
+                            <div class="row g-4">
+                                <div class="col-12 col-lg-8">
+                                    <dl class="meta row g-2 mb-0">
+                                        <div class="col-12"><dt>Title:</dt><dd>WorldQuant Challenge</dd></div>
+                                        <div class="col-12 col-sm-4"><dt>Type:</dt><dd>Competition</dd></div>
+                                        <div class="col-12 col-sm-4"><dt>Date:</dt><dd>Nov 2025</dd></div>
+                                        <div class="col-12 col-sm-4"><dt>Role:</dt><dd>Competitor</dd></div>
+                                        <div class="col-12"><dt>Description:</dt><dd>เข้าร่วมการแข่งขัน WorldQuant Challenge เพื่อสร้างและทดสอบกลยุทธ์การลงทุนเชิงปริมาณด้วย Python จากข้อมูลตลาดการเงิน</dd></div>
+                                        <div class="col-12"><dt>Skills:</dt><dd>Quantitative Finance, Python Programming</dd></div>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="evidence rounded-3 p-3">
+                                        <h4 class="h6 mb-2">Evidence</h4>
+                                        <figure class="mb-0">
+                                            <img class="img-fluid rounded shadow-sm" alt="WorldQuant Challenge certificate" src="./media/1762155714588.jpg">
+                                            <figcaption class="small text-muted mt-2">Certificate of Accomplishment ระดับ Gold จาก WorldQuant Challenge</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <p><b>Evidence: </b>Certificate</p>
-                                <img class="img-fluid rounded shadow" alt="WorldQuant Challenge certificate" src="./media/1762155714588.jpg">
+                            <h4 class="h5 mt-4">Reflection</h4>
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+                                <div class="col"><div class="reflection-card"><span class="label">What I did</span>เข้าร่วมการแข่งขัน WorldQuant Challenge สร้างกลยุทธ์ด้วย Python และใช้ backtesting ตรวจผลจากข้อมูลในอดีต</div></div>
+                                <div class="col"><div class="reflection-card"><span class="label">What I learned</span>ได้เรียนรู้ว่าต้องตั้งสมมติฐานก่อนแล้วจึงทดสอบ ไม่ใช่ปรับพารามิเตอร์จนผลดูสวย และการยอมรับผลที่ไม่เป็นไปตามที่คาดเป็นส่วนหนึ่งของงาน</div></div>
+                                <div class="col"><div class="reflection-card"><span class="label">Challenge</span>ก่อนแข่ง ผมคิดว่า quant คือการหาสูตรที่ให้ผลตอบแทนดีที่สุด แต่ปัญหาจริงคือแยกไม่ได้ว่าสัญญาณเป็นของจริงหรือบังเอิญจากข้อมูลในอดีต จึงกลับไปอ่านเรื่อง overfitting, time series และการทดสอบนอกช่วงข้อมูลที่ใช้สร้างโมเดล</div></div>
+                                <div class="col"><div class="reflection-card"><span class="label">Next step</span>อยากฝึกการแบ่งข้อมูลทดสอบให้เป็นระบบมากขึ้น และเรียนรู้การวัดความเสี่ยงของกลยุทธ์เพิ่มเติม</div></div>
                             </div>
                         </article>
                     </section>
